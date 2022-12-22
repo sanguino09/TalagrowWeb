@@ -2,7 +2,7 @@
 Awesome Template
 http://www.templatemo.com/preview/templatemo_450_awesome
 */
-@import url('https://fonts.cdnfonts.com/css/modern-sans');
+@import url("https://fonts.cdnfonts.com/css/modern-sans");
 
 body {
   background: #1e2f23;
@@ -37,7 +37,8 @@ h2 span {
 #team,
 #service,
 #portfolio,
-#contact {
+#contact,
+#spacing {
   padding-top: 60px;
   padding-bottom: 40px;
 }
@@ -181,11 +182,11 @@ header .social-icon li a {
   font-size: 13px;
   height: 70px;
   line-height: 40px;
-  color:white;
+  color: black;
 }
 
 .navbar-default .navbar-nav > li > a.current {
-  color: black;
+  color: white;
 }
 .templatemo-nav {
   border-radius: 0;
@@ -201,10 +202,10 @@ header .social-icon li a {
 
 /* start home */
 #home {
-	
-  background: url("../images/portadBlur.jpg") no-repeat;
+  background: url("../images/frontShop.jpg") no-repeat;
+  background-size: contain;
   background-size: cover;
-  width:100%;
+  width: 100%;
   padding-top: 160px;
   padding-bottom: 100px;
   min-height: 650px;
@@ -239,8 +240,9 @@ header .social-icon li a {
   border-color: transparent;
 }
 .element {
-  height: 60px;
-  font-size: 16px;
+  height: 50px;
+  font-size: 20px;
+  text-shadow: black 1px 0 2px;
 }
 /* end home */
 
@@ -497,6 +499,14 @@ header .social-icon li a {
 
 /* start 768 media quires */
 @media only screen and (max-width: 767px) {
+  #home .btn {
+    background: #b39c4d;
+    color: #ffff;
+    border-color: transparent;
+  }
+  .spacer{
+    display:none;
+  }
   #home {
     min-height: 300px;
     padding-top: 80px;
@@ -532,13 +542,26 @@ header .social-icon li a {
   }
 }
 /* end 768 media quires */
-
+@media only screen and (max-width: 450px) {
+  #home .btn {
+    background: #b39c4d;
+    color: #ffff;
+    border-color: transparent;
+  }
+  .spacer{
+    display:none;
+  }
+  #home {
+    background: url("../images/frontShopPhone.jpg") no-repeat;
+  }
+}
 /* start 360 media quires */
 @media only screen and (max-width: 360px) {
   header .social-icon {
     text-align: left;
   }
   #home {
+    background: url("../images/frontShopPhone.jpg") no-repeat;
     min-height: 200px;
     padding-top: 60px;
     padding-bottom: 40px;
