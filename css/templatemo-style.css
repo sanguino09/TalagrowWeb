@@ -37,7 +37,7 @@ h2 span {
 #team,
 #service,
 #portfolio,
-#contact{
+#contact {
   padding-top: 60px;
   padding-bottom: 40px;
 }
@@ -174,14 +174,14 @@ header .social-icon li a {
   height: 70px;
   line-height: 40px;
   padding: 12px 0px 0px 12px;
-  color: #0A0A0A;
+  color: #0a0a0a;
 }
 .navbar-default .navbar-nav li a {
   font-weight: bold;
   font-size: 13px;
   height: 70px;
   line-height: 40px;
-  color: #0A0A0A;
+  color: #0a0a0a;
 }
 
 .navbar-default .navbar-nav > li > a.current {
@@ -493,9 +493,11 @@ header .social-icon li a {
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
   }
+  .thanksLogo {
+    display: none;
+  }
 }
 /* end 360 media quires */
-
 /* start 768 media quires */
 @media only screen and (max-width: 767px) {
   #home .btn {
@@ -503,8 +505,8 @@ header .social-icon li a {
     color: #ffff;
     border-color: transparent;
   }
-  .spacer{
-    display:none;
+  .spacer {
+    display: none;
   }
   #home {
     min-height: 300px;
@@ -539,6 +541,9 @@ header .social-icon li a {
     line-height: 35px;
     color: black;
   }
+  .thanksLogo {
+    display: none;
+  }
 }
 /* end 768 media quires */
 @media only screen and (max-width: 450px) {
@@ -547,11 +552,14 @@ header .social-icon li a {
     color: #ffff;
     border-color: transparent;
   }
-  .spacer{
-    display:none;
+  .spacer {
+    display: none;
   }
   #home {
     background: url("../images/frontShopPhone.jpg") no-repeat;
+  }
+  .thanksLogo {
+    display: none;
   }
 }
 /* start 360 media quires */
@@ -568,5 +576,18 @@ header .social-icon li a {
   #home h1 {
     font-size: 32px;
   }
+  .thanksLogo {
+    display: none;
+  }
 }
 /* end 360 media quires */
+@media only screen and (min-width: 760px) {
+  .thanksLogo {
+    display: block;
+    font-family: "Modern Sans", sans-serif;
+    font-size: 40px;
+  }
+  .thanks{
+    margin-left:90%;
+  }
+}
