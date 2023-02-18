@@ -369,7 +369,7 @@ header .social-icon li a {
 }
 #portfolio .portfolio-thumb:hover .portfolio-overlay {
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 0.92;
 }
 /* end portfolio */
 
