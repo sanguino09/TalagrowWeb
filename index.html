@@ -25,6 +25,24 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- icono de hoja reutilizable -->
+    <svg style="display: none" aria-hidden="true">
+      <defs>
+        <path id="leaf-blade" d="M0,0 C-16,-35 -11,-85 0,-100 C11,-85 16,-35 0,0 Z" />
+      </defs>
+      <symbol id="icon-leaf" viewBox="0 0 100 100">
+        <g fill="currentColor" transform="translate(50,92)">
+          <use href="#leaf-blade" transform="rotate(0) scale(0.84)" />
+          <use href="#leaf-blade" transform="rotate(20) scale(0.76)" />
+          <use href="#leaf-blade" transform="rotate(-20) scale(0.76)" />
+          <use href="#leaf-blade" transform="rotate(42) scale(0.62)" />
+          <use href="#leaf-blade" transform="rotate(-42) scale(0.62)" />
+          <use href="#leaf-blade" transform="rotate(64) scale(0.46)" />
+          <use href="#leaf-blade" transform="rotate(-64) scale(0.46)" />
+        </g>
+      </symbol>
+    </svg>
+
     <!-- barra superior -->
     <div class="topbar">
       <div class="container">
@@ -43,7 +61,7 @@
     <nav class="nav" id="nav">
       <div class="container">
         <a href="#inicio" class="nav__brand">
-          <span class="nav__brand-mark"><i class="fa fa-pagelines"></i></span>
+          <span class="nav__brand-mark"><svg class="icon-leaf" aria-hidden="true"><use href="#icon-leaf"></use></svg></span>
           Talagrow
         </a>
 
@@ -70,12 +88,12 @@
     <section id="inicio" class="hero">
       <div class="hero__bg"></div>
       <div class="container hero__content">
-        <p class="eyebrow">Growshop en Talavera de la Reina</p>
-        <h1>El cuidado de mayor calidad para tus <span>plantas</span></h1>
+        <p class="eyebrow">Growshop de autocultivo en Talavera de la Reina</p>
+        <h1>El cuidado de mayor calidad para tu <span>cultivo</span></h1>
 
         <div class="hero__rotator">
           <span class="is-active">Para Talavera y toda la comarca.</span>
-          <span>Abonos, sistemas e iluminación al alcance de tu mano.</span>
+          <span>Abonos, iluminación y sustratos para indoor y exterior.</span>
           <span>Llámanos para sacarle el máximo partido a tu cultivo.</span>
         </div>
 
@@ -107,7 +125,7 @@
         <div class="section-head reveal">
           <p class="eyebrow">Nosotros</p>
           <h2>¿Por qué trabajar con nosotros?</h2>
-          <p>Más de una década ayudando a los cultivadores de Talavera y la comarca a sacar el máximo partido a sus plantas.</p>
+          <p>Más de una década ayudando a los cultivadores de cannabis de Talavera y la comarca a sacar el máximo partido a su cultivo.</p>
         </div>
 
         <div class="why__grid">
@@ -181,17 +199,17 @@
           <div class="service-card">
             <div class="service-card__icon"><i class="fa fa-lightbulb-o"></i></div>
             <h3>Iluminación</h3>
-            <p>Nos encargamos de que tus plantas reciban la mejor de las energías, con sistemas constantes y fiables.</p>
+            <p>Focos y sistemas de cultivo indoor para que tus plantas reciban la mejor de las energías en cada fase del ciclo.</p>
           </div>
           <div class="service-card">
-            <div class="service-card__icon"><i class="fa fa-pagelines"></i></div>
-            <h3>Sustratos</h3>
-            <p>Abonos de la mejor calidad, compost y guano para sacar lo mejor de tus cultivos. Su alimentación es clave.</p>
+            <div class="service-card__icon"><svg class="icon-leaf" aria-hidden="true"><use href="#icon-leaf"></use></svg></div>
+            <h3>Sustratos y abonos</h3>
+            <p>Abonos de la mejor calidad, compost y guano pensados para el autocultivo. Su alimentación es clave para tu cosecha.</p>
           </div>
           <div class="service-card">
             <div class="service-card__icon"><i class="fa fa-sun-o"></i></div>
             <h3>Control del clima</h3>
-            <p>Regulación de temperatura y humedad para todas las necesidades de tus plantas. Trátalas como se merecen.</p>
+            <p>Regulación de temperatura y humedad en tu armario de cultivo, para que tus plantas crezcan como se merecen.</p>
           </div>
         </div>
       </div>
@@ -212,7 +230,7 @@
             <div class="catalog-card__overlay">
               <span class="catalog-card__tag">Iluminación</span>
               <h4>Apolo 1000</h4>
-              <p>Luces de crecimiento adecuadas para conseguir una floración correcta en indoor.</p>
+              <p>Luces de crecimiento adecuadas para que tus plantas de cannabis tengan una floración correcta en indoor.</p>
             </div>
           </div>
           <div class="catalog-card reveal reveal-delay-1">
@@ -220,7 +238,7 @@
             <div class="catalog-card__overlay">
               <span class="catalog-card__tag">Ventilación</span>
               <h4>Extractores</h4>
-              <p>Un buen equipo de extracción es garantía de una cosecha excelente y de buena calidad.</p>
+              <p>Una buena circulación de aire en tu armario de cultivo es garantía de una cosecha excelente y de buena calidad.</p>
             </div>
           </div>
           <div class="catalog-card reveal reveal-delay-2">
@@ -228,7 +246,7 @@
             <div class="catalog-card__overlay">
               <span class="catalog-card__tag">Fertilizantes</span>
               <h4>Advanced Nutrients</h4>
-              <p>Gama extensa y completa con todos los nutrientes necesarios para cultivos de calidad alta.</p>
+              <p>Uno de los fertilizantes más recomendados para cultivadores de cannabis, con todos los nutrientes para una calidad alta.</p>
             </div>
           </div>
           <div class="catalog-card reveal reveal-delay-3">
@@ -350,7 +368,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__brand">
-          <span class="nav__brand-mark"><i class="fa fa-pagelines"></i></span>
+          <span class="nav__brand-mark"><svg class="icon-leaf" aria-hidden="true"><use href="#icon-leaf"></use></svg></span>
           Talagrow
         </div>
         <ul class="footer__links">
