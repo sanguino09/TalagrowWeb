@@ -2,656 +2,366 @@
 <html lang="es">
   <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3254NKD4D0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3254NKD4D0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3254NKD4D0');
+    </script>
 
-  gtag('config', 'G-3254NKD4D0');
-</script>
-    <meta charset="utf-8"/>
-    <link href="https://fonts.cdnfonts.com/css/modern-sans" rel="stylesheet" />
-    <!-- 
-        Awesome Template
-        http://www.templatemo.com/preview/templatemo_450_awesome
-        -->
-    <title>Talagrow | Todo lo que necesitas para tus plantas</title>
-    <meta name="keywords" content="Talavera. Talagrow. Growshop. Talagrow. Abonos. Semillas. Fertilizantes." />
-    <meta name="description" content="Talagrow. Tienda de abonos, iluminacion, control del clima, fertilizantes, y todo lo relacionado con las growshops, cerca de casa, Talavera de la Reina y Comarca."/>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Talagrow | Growshop en Talavera de la Reina</title>
+    <meta name="keywords" content="Talavera. Talagrow. Growshop. Abonos. Semillas. Fertilizantes." />
+    <meta name="description" content="Talagrow. Tienda de abonos, iluminación, control del clima, fertilizantes y todo lo relacionado con las growshops, cerca de casa, en Talavera de la Reina y comarca." />
     <meta name="google-site-verification" content="tDk0WGErM4j2sV_QTzYd5lI3x9P3Pc784vV7N36oa0w" />
     <link rel="icon" href="./images/marijuana.png" />
-    <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link
-      href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="css/templatemo-style.css" />
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.singlePageNav.min.js"></script>
-    <script src="js/typed.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/custom.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body id="top">
-    <!-- comienza la pantalla de carga -->
-    <div class="preloader">
-      <div class="sk-spinner sk-spinner-wave">
-        <div class="sk-rect1"></div>
-        <div class="sk-rect2"></div>
-        <div class="sk-rect3"></div>
-        <div class="sk-rect4"></div>
-        <div class="sk-rect5"></div>
+  <body>
+    <!-- barra superior -->
+    <div class="topbar">
+      <div class="container">
+        <div class="topbar__info">
+          <a href="tel:+34635400085"><i class="fa fa-phone"></i> +34 635 40 00 85</a>
+          <span><i class="fa fa-map-marker"></i> C/ Navalcán n.º 5, Talavera de la Reina</span>
+        </div>
+        <div class="topbar__social">
+          <a href="https://www.facebook.com/tala.grow/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=34635400085" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa fa-whatsapp"></i></a>
+        </div>
       </div>
     </div>
-    <!-- acaba la pantalla de carga -->
 
-    <!-- comienza el encabezado  -->
-    <header>
+    <!-- navegación -->
+    <nav class="nav" id="nav">
       <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-4 col-xs-12">
-            <p>
-              <i class="fa fa-phone"></i><span>Teléfono</span><a href="tel:+34635400085">+34 635 40 00 85</a>
-            </p>
-          </div>
-          <div class="col-md-3 col-sm-4 col-xs-12">
-            <p>
-              <i class="fa fa-map-marker"></i> C/ Navalcán n.º 5, Talavera de la
-              Reina
-            </p>
-          </div>
+        <a href="#inicio" class="nav__brand">
+          <span class="nav__brand-mark"><i class="fa fa-pagelines"></i></span>
+          Talagrow
+        </a>
 
-          <div class="col-md-5 col-sm-4 col-xs-12">
-            <ul class="social-icon">
-              <li><span>Encuéntranos en</span></li>
-              <li><a href="https://www.facebook.com/tala.grow/" class="fa fa-facebook"></a></li>
-              <li><a href="https://api.whatsapp.com/send?phone=34635400085" class="fa fa-whatsapp"></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- acaba el encabezado -->
+        <ul class="nav__links">
+          <li><a href="#inicio" class="is-active">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#distribuidores">Distribuidores</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
 
-    <!-- comienza la barra de navegacion -->
-    <nav class="navbar navbar-default templatemo-nav" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-          >
-            <span class="icon icon-bar"></span>
-            <span class="icon icon-bar"></span>
-            <span class="icon icon-bar"></span>
-          </button>
-          <a
-            href="#"
-            class="navbar-brand noHover"
-            style="font-family: 'Modern Sans', sans-serif; font-size: 40px"
-            >Talagrow</a
-          >
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#top">INICIO</a></li>
-            <li><a href="#service">SERVICIOS</a></li>
-            <li><a href="#portfolio">CATÁLOGO</a></li>
-            <li><a href="#contact">CONTACTA</a></li>
-          </ul>
+        <div class="nav__actions">
+          <a href="https://api.whatsapp.com/send?phone=34635400085" class="btn btn--dark nav__cta" target="_blank" rel="noopener">
+            <i class="fa fa-whatsapp"></i> Escríbenos
+          </a>
+          <button class="nav__toggle" aria-label="Abrir menú"><span></span></button>
         </div>
       </div>
     </nav>
-    <!-- acaba la barra de navegacion -->
 
-    <!-- comienza el inicio -->
-    <section id="home">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-offset-2 col-md-8">
-            <h1
-              style="text-shadow: black 1px 0 2px"
-              class="wow fadeIn"
-              data-wow-offset="50"
-              data-wow-delay="0.9s"
-            >
-             <span>Talagrow</span>. El cuidado de mayor calidad para tus <span>plantas.<span>
-            </h1>
-            <div class="element">
-              <div class="sub-element">
-                <span style="text-shadow: black 1px 0 2px"
-                  >Para Talavera y toda la comarca.</span
-                >
-              </div>
-              <div class="sub-element">
-                <span style="text-shadow: black 1px 0 2px"
-                  >Abonos, sistemas e iluminación a la alcance de la mano.</span
-                >
-              </div>
-              <div class="sub-element">
-                <span style="text-shadow: black 1px 0 2px">
-                  LLámenos para sacarle el máximo partido a su cultivo.</span
-                >
-              </div>
-            </div>
-            <a
-              style="text-shadow: black 1px 0 2px"
-              data-scroll
-              href="#about"
-              class="btn btn-default wow fadeInUp"
-              data-wow-offset="50"
-              data-wow-delay="0.6s"
-              >Trabajemos juntos</a
-            >
+    <!-- inicio -->
+    <section id="inicio" class="hero">
+      <div class="hero__bg"></div>
+      <div class="container hero__content">
+        <p class="eyebrow">Growshop en Talavera de la Reina</p>
+        <h1>El cuidado de mayor calidad para tus <span>plantas</span></h1>
+
+        <div class="hero__rotator">
+          <span class="is-active">Para Talavera y toda la comarca.</span>
+          <span>Abonos, sistemas e iluminación al alcance de tu mano.</span>
+          <span>Llámanos para sacarle el máximo partido a tu cultivo.</span>
+        </div>
+
+        <div class="hero__actions">
+          <a href="#contacto" class="btn btn--primary">Trabajemos juntos</a>
+          <a href="#catalogo" class="btn btn--ghost">Ver catálogo</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <strong>10+</strong>
+            <span>Años de experiencia</span>
+          </div>
+          <div class="hero__stat">
+            <strong>4</strong>
+            <span>Distribuidores de referencia</span>
+          </div>
+          <div class="hero__stat">
+            <strong>100%</strong>
+            <span>Atención cercana</span>
           </div>
         </div>
       </div>
     </section>
-    <!-- acaba el inicio -->
 
-    <!-- cominenza el "sobre la tienda" -->
-    <section id="about">
+    <!-- nosotros -->
+    <section id="nosotros" class="section why">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
-              ¿Por qué trabajar con<span style="color: #b39c4d">
-                nosotros?</span
-              >
-            </h2>
+        <div class="section-head reveal">
+          <p class="eyebrow">Nosotros</p>
+          <h2>¿Por qué trabajar con nosotros?</h2>
+          <p>Más de una década ayudando a los cultivadores de Talavera y la comarca a sacar el máximo partido a sus plantas.</p>
+        </div>
+
+        <div class="why__grid">
+          <div class="why-card reveal">
+            <div class="why-card__icon"><i class="fa fa-shield"></i></div>
+            <h3>Seguridad y confianza</h3>
+            <p>Con más de <strong>10 años de experiencia</strong> en el mercado de los fertilizantes y el autocultivo, somos expertos en el cuidado y aprovechamiento de las herramientas de este nicho.</p>
           </div>
-          <div
-            class="col-md-4 col-sm-4 col-xs-12 wow fadeInLeft"
-            data-wow-offset="50"
-            data-wow-delay="0.6s"
-          >
-            <div class="media">
-              <div class="media-heading-wrapper">
-                <div class="media-object pull-left">
-                  <i class="fa fa-shield"></i>
+          <div class="why-card reveal reveal-delay-1">
+            <div class="why-card__icon"><i class="fa fa-comment-o"></i></div>
+            <h3>Atención</h3>
+            <p>Respuesta rápida ante dudas y sugerencias, con una <strong>prestación eficaz y valiosa</strong> de todo tipo de pedidos.</p>
+          </div>
+          <div class="why-card reveal reveal-delay-2">
+            <div class="why-card__icon"><i class="fa fa-thumbs-up"></i></div>
+            <h3>Calidad y cercanía</h3>
+            <p>Los <strong>mejores productos</strong>, traídos de la mano del trabajo codo con codo que tenemos con las <strong>mejores marcas</strong> del sector.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- distribuidores -->
+    <section id="distribuidores" class="section section--alt distributors">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Distribuidores</p>
+          <h2>Principales distribuidores</h2>
+          <p>Trabajamos codo con codo con las marcas más reconocidas del sector para garantizar la mejor calidad en cada producto.</p>
+        </div>
+
+        <div class="distributors__grid">
+          <div class="distributor-card reveal">
+            <div class="distributor-card__logo"><img src="images/hortitec.png" alt="Logo de Hortitec" loading="lazy" /></div>
+            <h3>Hortitec</h3>
+            <span class="distributor-card__tag">Distribuidor</span>
+            <p>Especializada en la distribución de productos para la horticultura técnica y el combate de plagas y enfermedades vegetales.</p>
+          </div>
+          <div class="distributor-card reveal reveal-delay-1">
+            <div class="distributor-card__logo"><img src="images/plantasurblanci.png" alt="Logo de Plantasur" loading="lazy" /></div>
+            <h3>Plantasur</h3>
+            <span class="distributor-card__tag">Distribuidor</span>
+            <p>Sobresale por sus sistemas de control de iluminación e irrigación, además de sus estructuras de invernadero y armarios de cultivo.</p>
+          </div>
+          <div class="distributor-card reveal reveal-delay-2">
+            <div class="distributor-card__logo"><img src="images/leaflife.png" alt="Logo de Leaf Life" loading="lazy" /></div>
+            <h3>Leaf Life</h3>
+            <span class="distributor-card__tag">Distribuidor</span>
+            <p>Un amplio catálogo que crece mes a mes, con un equipo comercial en toda la península y una logística eficaz y fiable.</p>
+          </div>
+          <div class="distributor-card reveal reveal-delay-3">
+            <div class="distributor-card__logo"><img src="images/hemp.png" alt="Logo de Hemp Trading" loading="lazy" /></div>
+            <h3>Hemp Trading</h3>
+            <span class="distributor-card__tag">Distribuidor</span>
+            <p>Venta al por mayor de artículos de jardinería técnica desde 2002, cubriendo las exigencias de un mercado en auge.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- servicios -->
+    <section id="servicios" class="section services">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Servicios</p>
+          <h2>Los mejores servicios</h2>
+          <p>Todo lo que tu cultivo necesita, en un mismo sitio y con asesoramiento experto.</p>
+        </div>
+
+        <div class="services__grid reveal">
+          <div class="service-card">
+            <div class="service-card__icon"><i class="fa fa-lightbulb-o"></i></div>
+            <h3>Iluminación</h3>
+            <p>Nos encargamos de que tus plantas reciban la mejor de las energías, con sistemas constantes y fiables.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon"><i class="fa fa-pagelines"></i></div>
+            <h3>Sustratos</h3>
+            <p>Abonos de la mejor calidad, compost y guano para sacar lo mejor de tus cultivos. Su alimentación es clave.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon"><i class="fa fa-sun-o"></i></div>
+            <h3>Control del clima</h3>
+            <p>Regulación de temperatura y humedad para todas las necesidades de tus plantas. Trátalas como se merecen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- catálogo -->
+    <section id="catalogo" class="section section--alt catalog">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Catálogo</p>
+          <h2>Novedades de nuestro catálogo</h2>
+          <p>Una muestra de lo que encontrarás en tienda, seleccionado con las mejores marcas del sector.</p>
+        </div>
+
+        <div class="catalog__grid">
+          <div class="catalog-card reveal">
+            <img src="./images/apolo1000.jpg" alt="Iluminación Apolo 1000" loading="lazy" />
+            <div class="catalog-card__overlay">
+              <span class="catalog-card__tag">Iluminación</span>
+              <h4>Apolo 1000</h4>
+              <p>Luces de crecimiento adecuadas para conseguir una floración correcta en indoor.</p>
+            </div>
+          </div>
+          <div class="catalog-card reveal reveal-delay-1">
+            <img src="images/extractor.jpg" alt="Extractor de aire para cultivo" loading="lazy" />
+            <div class="catalog-card__overlay">
+              <span class="catalog-card__tag">Ventilación</span>
+              <h4>Extractores</h4>
+              <p>Un buen equipo de extracción es garantía de una cosecha excelente y de buena calidad.</p>
+            </div>
+          </div>
+          <div class="catalog-card reveal reveal-delay-2">
+            <img src="images/fertilizanteAdvanced.jpeg" alt="Fertilizante Advanced Nutrients" loading="lazy" />
+            <div class="catalog-card__overlay">
+              <span class="catalog-card__tag">Fertilizantes</span>
+              <h4>Advanced Nutrients</h4>
+              <p>Gama extensa y completa con todos los nutrientes necesarios para cultivos de calidad alta.</p>
+            </div>
+          </div>
+          <div class="catalog-card reveal reveal-delay-3">
+            <img src="images/fertilizanteBacVerde.jpeg" alt="Fertilizante B.A.C Organic Bloom" loading="lazy" />
+            <div class="catalog-card__overlay">
+              <span class="catalog-card__tag">Fertilizantes</span>
+              <h4>B.A.C Organic Bloom</h4>
+              <p>Desarrollado para tu ciclo de floración, con nutrientes orgánicos de fácil absorción.</p>
+            </div>
+          </div>
+          <div class="catalog-card reveal">
+            <img src="images/sustratoCoco.jpeg" alt="Sustrato de coco Atami" loading="lazy" />
+            <div class="catalog-card__overlay">
+              <span class="catalog-card__tag">Sustratos</span>
+              <h4>Sustratos Atami</h4>
+              <p>Excelente calidad para que tus plantas absorban el agua y nutrientes que necesitan.</p>
+            </div>
+          </div>
+          <div class="catalog-card reveal reveal-delay-1">
+            <img src="images/sustratoTerra.jpeg" alt="Sustrato CANNA Terra Professional" loading="lazy" />
+            <div class="catalog-card__overlay">
+              <span class="catalog-card__tag">Sustratos</span>
+              <h4>CANNA Terra Professional</h4>
+              <p>Rico en nitrógeno, con turba negra mejorada, musgo de turba granulado y perlita.</p>
+            </div>
+          </div>
+          <div class="catalog-card reveal reveal-delay-2">
+            <img src="images/suculentas.jpg" alt="Suculentas de decoración" loading="lazy" />
+            <div class="catalog-card__overlay">
+              <span class="catalog-card__tag">Decoración</span>
+              <h4>Suculentas</h4>
+              <p>Ideales para decorar tu casa con detalles que ocupan poco y agradan mucho.</p>
+            </div>
+          </div>
+          <div class="catalog-card reveal reveal-delay-3">
+            <img src="images/cactus.jpg" alt="Mini cactus de decoración" loading="lazy" />
+            <div class="catalog-card__overlay">
+              <span class="catalog-card__tag">Decoración</span>
+              <h4>Mini cactus</h4>
+              <p>Los más bonitos para tu hogar: apenas necesitan agua para mantenerse.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog__footer reveal">
+          <p>Y mucho más en <strong>nuestro local</strong>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- contacto -->
+    <section id="contacto" class="section contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Contacto</p>
+          <h2>Hablemos</h2>
+          <p>Cuéntanos qué necesita tu cultivo y te responderemos lo antes posible.</p>
+        </div>
+
+        <div class="contact__grid">
+          <form class="contact-form reveal" action="https://formsubmit.co/asunosa@gmail.com" method="POST">
+            <div class="form-row">
+              <label for="fullname">Tu nombre</label>
+              <input name="fullname" type="text" id="fullname" placeholder="¿Cómo te llamas?" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Tu email o número de contacto</label>
+              <input name="email" type="email" id="email" placeholder="tu@email.com" required />
+            </div>
+            <div class="form-row">
+              <label for="message">Tu mensaje</label>
+              <textarea name="message" rows="4" id="message" placeholder="Cuéntanos en qué podemos ayudarte" required></textarea>
+            </div>
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://sanguino09.github.io/thanksPage/" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_subject" value="Nuevo mensaje recibido desde Talagrow.es" />
+            <button type="submit" class="btn btn--primary">Enviar mensaje</button>
+          </form>
+
+          <div class="contact-info reveal reveal-delay-1">
+            <div class="contact-info__card">
+              <div class="contact-info__row">
+                <i class="fa fa-phone"></i>
+                <div>
+                  <span class="contact-info__label">Teléfono</span>
+                  <a href="tel:+34635400085">+34 635 40 00 85</a> · (Fijo) 925 67 47 62
                 </div>
-                <h3 class="media-heading">Seguridad y confianza</h3>
               </div>
-              <div class="media-body">
-                <p>
-                  Con más de
-                  <span style="color: #b39c4d; font-weight: bold"
-                    >10 años de experiencia</span
-                  >
-                  en el mercado de los fertilizantes y el autocultivo. Expertos
-                  en el cuidado y aprovechamiento de las herramientas de este
-                  nicho.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-4 col-sm-4 col-xs-12 wow fadeInUp"
-            data-wow-offset="50"
-            data-wow-delay="0.9s"
-          >
-            <div class="media">
-              <div class="media-heading-wrapper">
-                <div class="media-object pull-left">
-                  <i class="fa fa-comment-o"></i>
+              <div class="contact-info__row">
+                <i class="fa fa-envelope-o"></i>
+                <div>
+                  <span class="contact-info__label">Email</span>
+                  <a href="mailto:asunosa@gmail.com">asunosa@gmail.com</a>
                 </div>
-                <h3 class="media-heading">Atención</h3>
               </div>
-              <div class="media-body">
-                <p>
-                  Respuesta rápida ante dudas y sugerencias,<span
-                    style="color: #b39c4d; font-weight: bold"
-                  >
-                    prestación eficaz y valiosa</span
-                  >
-                  de todo tipo de pedidos.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-4 col-sm-4 col-xs-12 wow fadeInRight"
-            data-wow-offset="50"
-            data-wow-delay="0.6s"
-          >
-            <div class="media">
-              <div class="media-heading-wrapper">
-                <div class="media-object pull-left">
-                  <i class="fa fa-thumbs-up"></i>
+              <div class="contact-info__row">
+                <i class="fa fa-map-marker"></i>
+                <div>
+                  <span class="contact-info__label">Dirección</span>
+                  C/ Navalcán n.º 5, Talavera de la Reina, Toledo
                 </div>
-                <h3 class="media-heading">Calidad y cercanía</h3>
               </div>
-              <div class="media-body">
-                <p>
-                  Los
-                  <span style="color: #b39c4d; font-weight: bold"
-                    >mejores productos</span
-                  >
-                  traídos de la mano del trabajo codo con codo que tenemos con
-                  las
-                  <span style="color: #b39c4d; font-weight: bold"
-                    >mejores marcas</span
-                  >
-                  para hacer de tu cultivo el mejor de la península.
-                </p>
+            </div>
+
+            <div class="contact-info__card">
+              <span class="contact-info__label">Encuéntranos en</span>
+              <div class="contact-info__social" style="margin-top: 12px">
+                <a href="https://www.facebook.com/tala.grow/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=34635400085" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa fa-whatsapp"></i></a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- termina el "sobre la tienda" -->
 
-        <!-- cominenzan los distribuidores -->
-    <section id="team">
+    <!-- pie de página -->
+    <footer class="footer">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
-              <span style="color: #b39c4d">PRINCIPALES</span> DISTRIBUIDORES
-            </h2>
-          </div>
-          <div
-            class="col-md-3 col-sm-6 col-xs-12 wow fadeIn"
-            data-wow-offset="50"
-            data-wow-delay="1.3s"
-          >
-            <div class="team-wrapper">
-              <img
-                src="images/hortitec.png"
-                class="img-responsive"
-                alt="team img 1"
-              />
-              <div class="team-des">
-                <h4>Hortitec</h4>
-                <span>Distribuidor</span>
-                <p>
-                  Hortitec es una empresa especializada en la distribución de productos para la horticultura técnica y el combate de plagas y enfermedades vegetales.<br><br>
-                  En pocos años de actividad nacional e internacional, se ha convertido en una de las empresas más importantes del sector.
-                  
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-3 col-sm-6 col-xs-12 wow fadeIn"
-            data-wow-offset="50"
-            data-wow-delay="1.6s"
-          >
-            <div class="team-wrapper">
-              <img
-                src="images/plantasurblanci.png"
-                class="img-responsive"
-                alt="team img 2"
-                size="auto"
-              />
-              <div class="team-des">
-                <h4>Plantasur</h4>
-                <span>Distribuidor</span>
-                <p>
-                  Plantasur sobresale por sus sistemas de control de la iluminación y de irrigación, con controles de temporizador y demás aplicaciones logísticas.<br><br>
-                  Además de sus estructuras de invernadero y armarios para la organización y comodidad de los clientes.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-3 col-sm-6 col-xs-12 wow fadeIn"
-            data-wow-offset="50"
-            data-wow-delay="1.3s"
-          >
-            <div class="team-wrapper">
-              <img height="567px"
-                src="images/leaflife.png"
-                class="img-responsive"
-                alt="team img 3"
-              />
-              <div class="team-des">
-                <h4>Leaf Life</h4>
-                <span>Distribuidor</span>
-                <p>
-                  Leaf Life pone a su disposición un amplio catálogo de productos que crece mes a mes.<br><br> 
-                  Con un equipo comercial distribuido por toda la península, una logística eficaz y una amplia experiencia les avala para que las growshops reciban el mejor trato posible.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-3 col-sm-6 col-xs-12 wow fadeIn"
-            data-wow-offset="50"
-            data-wow-delay="1.6s"
-          >
-            <div class="team-wrapper">
-              <img
-                src="images/hemp.png"
-                class="img-responsive"
-                alt="team img 4"
-              />
-              <div class="team-des">
-                <h4>Hemp Trading</h4>
-                <span>Distribuidor</span>
-                <p> 
-                  Hemp Trading es una empresa dedicada a la venta al por mayor para growshop y artículos de jardinería técnica (armarios de cultivo, herramientas, instrumentos de medición, etc). 
-                  <br><br>Nacida en 2002 con el objetivo de cubrir las exigencias de un mercado en auge.
-                </p>
-              </div>
-            </div>
-          </div>
+        <div class="footer__brand">
+          <span class="nav__brand-mark"><i class="fa fa-pagelines"></i></span>
+          Talagrow
         </div>
-      </div>
-    </section>
-        <!-- terminan los distribuidores -->
-
-    <!-- comienzan los servicios ofrendados -->
-    <section id="service">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
-              LOS <span style="color: #b39c4d">MEJORES</span> SERVICIOS
-            </h2>
-          </div>
-          <div
-            class="col-md-4 wow fadeIn"
-            data-wow-offset="50"
-            data-wow-delay="0.6s"
-          >
-            <i class="fa fa-lightbulb-o"></i>
-            <h4>Iluminación</h4>
-            <p>
-              Nos encargamos de que sus plantas reciban la mejor de las energías, sistemas constantes y fiables.
-            </p>
-          </div>
-          <div
-            class="col-md-4 active wow fadeIn"
-            data-wow-offset="50"
-            data-wow-delay="0.9s"
-          >
-            <i class="fa fa-pagelines"></i>
-            <h4>Sustratos</h4>
-            <p>
-              Abonos de la mejor calidad, compost y guano para sacar lo mejor de sus cultivos. Su alimentación es clave para su crecimiento.
-            </p>
-          </div>
-          <div
-            class="col-md-4 wow fadeIn"
-            data-wow-offset="50"
-            data-wow-delay="0.6s"
-          >
-            <i class="fa fa-sun-o"></i>
-            <h4>Control del clima</h4>
-            <p>
-              Regulación de temperatura y humedad para todas las necesidades de sus plantas. Tratélas como se merecen.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- terminan los servicios ofrendados -->
-
-    <!-- comienza el catalogo -->
-    <section id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
-             NOVEDADES DE <span style="color: #b39c4d">NUESTRO</span> CATÁLOGO
-            </h2>
-          </div>
-          <div
-            class="col-md-3 col-sm-6 col-xs-12 wow fadeIn"
-            data-wow-offset="50"
-            data-wow-delay="0.6s"
-          >
-            <div class="portfolio-thumb">
-              <img
-                src="./images/apolo1000.jpg"
-                class="img-responsive"
-                alt="portfolio img 1"
-              />
-              <div class="portfolio-overlay">
-                <h4>Iluminacion</h4>
-                <p>
-                  Si queremos conseguir que nuestras plantas de cannabis tengan un crecimiento y una floración correcta en un indoor (armario o habitación), tenemos que asegurarnos de que contamos con luces para crecimiento de marihuana adecuadas para nuestras plantas.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-3 col-sm-6 col-xs-12 wow fadeIn"
-            data-wow-offset="50"
-            data-wow-delay="0.6s"
-          >
-            <div class="portfolio-thumb">
-              <img
-                src="images/extractor.jpg"
-                class="img-responsive"
-                alt="portfolio img 2"
-              />
-              <div class="portfolio-overlay">
-                <h4>Extractor</h4>
-                <p>
-                  Un factor fundamental en un auto cultivo indoor es la circulación de aire.</br></br>Disponer de un buen equipo de Extractores de aire para cultivo indoor es garantía de obtener una cosecha excelente y de buena calidad.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-3 col-sm-6 col-xs-12 wow fadeIn"
-            data-wow-offset="50"
-            data-wow-delay="0.6s"
-          >
-            <div class="portfolio-thumb">
-              <img
-                src="images/fertilizanteAdvanced.jpeg"
-                class="img-responsive"
-                alt="portfolio img 3"
-              />
-              <div class="portfolio-overlay">
-                <h4>Fertilizantes</h4>
-                <p>
-                  Advanced Nutrients es un fertilizante de los mas recomendados para cultivadores de cannabis. </br></br>Su gama es extensa y completa con todos los nutrientes necesarios para que los cultivos tengan calidad alta.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-3 col-sm-6 col-xs-12 wow fadeIn"
-            data-wow-offset="50"
-            data-wow-delay="0.6s"
-          >
-            <div class="portfolio-thumb">
-              <img
-                src="images/fertilizanteBacVerde.jpeg"
-                class="img-responsive"
-                alt="portfolio img 4"
-              />
-              <div class="portfolio-overlay">
-                <h4>Fertilizantes</h4>
-                <p>
-                  Los nutrientes de B.A.C Organic Bloom han sido especialmente desarrollados para satisfacer todas las necesidades de tu cosecha durante el ciclo de floración.</br></br> Sólo usamos sustancias nutrientes orgánicas de alta calidad que pueden ser absorbidas fácilmente.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-3 col-sm-6 col-xs-12 wow fadeIn"
-            data-wow-offset="50"
-            data-wow-delay="0.6s"
-          >
-            <div class="portfolio-thumb">
-              <img
-                src="images/sustratoCoco.jpeg"
-                class="img-responsive"
-                alt="portfolio img 3"
-              />
-              <div class="portfolio-overlay">
-                <h4>Sustratos</h4>
-                <p>
-                  Los sustratos Atami se caracterizan por su excelente calidad y por haber sido desarrollados pensando en todo tipo de cultivador. </br></br>Con estos sustratos conseguirás que tus plantas absorban la cantidad de agua y nutrientes que necesitan para que crezcan fuertes y sanas.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-3 col-sm-6 col-xs-12 wow fadeIn"
-            data-wow-offset="50"
-            data-wow-delay="0.6s"
-          >
-            <div class="portfolio-thumb">
-              <img
-                src="images/sustratoTerra.jpeg"
-                class="img-responsive"
-                alt="portfolio img 4"
-              />
-              <div class="portfolio-overlay">
-                <h4>Sustratos</h4>
-                <br>
-                  Terra Professional es un sustrato rico en nitrógeno para el cultivo de plantas.</br></br>Tus plantas crecen mejor en un sustrato rico en nitrógeno, y el sustrato CANNA Terra Professional no se parece a nada de lo que encontrarás en un vivero.</br></br> Contiene una mezcla de turba negra mejorada, musgo de turba granulado y perlita. Si vas a cultivar en tierra, ya sea en interior o en exterior, este es el sustrato que necesitas.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-3 col-sm-6 col-xs-12 wow fadeIn"
-            data-wow-offset="50"
-            data-wow-delay="0.6s"
-          >
-            <div class="portfolio-thumb">
-              <img
-                src="images/suculentas.jpg"
-                class="img-responsive"
-                alt="portfolio img 1"
-              />
-              <div class="portfolio-overlay">
-                <h4>Suculentas</h4>
-                <p>
-                  Estas pequeñas plantas son ideales para decorar tu casa con detalles que ocupan poco y agradan mucho, apenas necesitan agua y son muy llamativas.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-3 col-sm-6 col-xs-12 wow fadeIn"
-            data-wow-offset="50"
-            data-wow-delay="0.6s"
-          >
-            <div class="portfolio-thumb">
-              <img
-                src="images/cactus.jpg"
-                class="img-responsive"
-                alt="portfolio img 2"
-              />
-              <div class="portfolio-overlay">
-                <h4>Mini Cactus</h4>
-                <p>
-                  Los mini cactus más bonitos para tu hogar, rellena ese hueco en el salón con unas pequeñas plantitas que no necesitan apenas de agua para mantenerse.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
-          Y mucho más en <span style="color: #b39c4d">nuestro</span> local.
-         </h2>
-      </div>
-    </section>
-    <!-- termina el catalogo -->
-
-    <!-- comienza el contacto -->
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
-              CONTACTA CON <span style="color: #b39c4d">NOSOTROS</span>
-            </h2>
-          </div>
-          <div
-            class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft"
-            data-wow-offset="50"
-            data-wow-delay="0.9s"
-          >
-            <form action="https://formsubmit.co/asunosa@gmail.com" method="POST">
-              <label>Tu Nombre</label>
-              <input
-                name="fullname"
-                type="text"
-                class="form-control"
-                id="fullname"
-                required
-              />
-
-              <label>Tu Email o Número de Contacto</label>
-              <input
-                name="email"
-                type="email"
-                class="form-control"
-                id="email"
-                required
-              />
-
-              <label>Tu Mensaje</label>
-              <textarea
-                name="message"
-                rows="4"
-                class="form-control"
-                id="message"
-                required
-              ></textarea>
-              <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_next" value="https://sanguino09.github.io/thanksPage/">
-              <input type="hidden" name="_template" value="table">
-              <input type="hidden" name="_subject" value="Nuevo Mensaje recibido desde Talagrow.es">
-              <input type="submit" class="form-control" />
-            </form>
-          </div>
-          <div
-            class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight"
-            data-wow-offset="50"
-            data-wow-delay="0.6s"
-          >
-            <address>
-              <p class="address-title">Dirección</p>
-              <span></span>
-              <p><i class="fa fa-phone"></i><a href="tel:+34635400085">+34 635 40 00 85</a> / (Fijo) 925 67 47 62</p>
-              <p><i class="fa fa-envelope-o"></i> asunosa@gmail.com</p>
-              <p>
-                <i class="fa fa-map-marker"></i> C/ Navalcán n.º 5, Talavera de
-                la Reina, Toledo
-              </p>
-            </address>
-            <ul class="social-icon">
-              <li><h4>Redes</h4></li>
-              <li><a href="https://www.facebook.com/tala.grow/" class="fa fa-facebook"></a></li>
-              <li><a href="https://api.whatsapp.com/send?phone=34635400085" class="fa fa-whatsapp"></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- termina el contacto -->
-
-    <!-- comienza copyright -->
-    <footer id="copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
-              Copyright &copy; 2022 Talagrow
-            </p>
-          </div>
-        </div>
+        <ul class="footer__links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <p>Copyright &copy; <span id="year">2026</span> Talagrow</p>
       </div>
     </footer>
-    <!-- termina el copyright -->
+
+    <script src="js/main.js"></script>
   </body>
 </html>
