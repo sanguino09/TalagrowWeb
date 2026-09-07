@@ -16,15 +16,24 @@
   /* Mobile menu toggle ----------------------------------------------- */
   var toggle = document.querySelector(".nav__toggle");
   var links = document.querySelector(".nav__links");
+  var scrim = document.querySelector(".nav__scrim");
+  var closeMenu = function () {
+    toggle.classList.remove("is-active");
+    links.classList.remove("is-open");
+    if (scrim) scrim.classList.remove("is-open");
+  };
   if (toggle && links) {
     toggle.addEventListener("click", function () {
-      toggle.classList.toggle("is-active");
-      links.classList.toggle("is-open");
+      var isOpen = toggle.classList.toggle("is-active");
+      links.classList.toggle("is-open", isOpen);
+      if (scrim) scrim.classList.toggle("is-open", isOpen);
     });
+    if (scrim) {
+      scrim.addEventListener("click", closeMenu);
+    }
     links.querySelectorAll("a").forEach(function (a) {
       a.addEventListener("click", function () {
-        toggle.classList.remove("is-active");
-        links.classList.remove("is-open");
+        closeMenu();
       });
     });
   }
