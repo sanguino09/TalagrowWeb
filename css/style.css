@@ -114,6 +114,7 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
   color: var(--accent-dark);
   margin-bottom: 14px;
+  white-space: nowrap;
 }
 
 .eyebrow::before {
